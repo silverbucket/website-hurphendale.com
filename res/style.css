@@ -12,7 +12,7 @@ body > .container {
     height: 100%;
     background-color: #0c0202;
     max-width: 2000px !important;
-    min-width: 785px !important;
+    /*min-width: 785px !important;*/
 }
 
 body > .container > .layer {
