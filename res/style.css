@@ -35,7 +35,7 @@ body > .container > .layer {
     padding-left: 2rem;
 }
 
-h1.title, h1, h2 {
+h1, h2 {
     color: #f3f3f3;
     font-family: 'Gruppo', 'Didact Gothic';
 }
