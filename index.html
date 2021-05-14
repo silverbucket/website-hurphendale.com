@@ -8,15 +8,16 @@
     <meta property="og:title" content="Hurphendale" />
     <meta property="og:description" content="Hurphendale is the solo electronic project of American musician Nick Jennings." />
     <title>Hurphendale</title>
-    <link rel="icon" type="image/svg+xml" href="/res/icon.svg">
+    <link rel="canonical" href="https://hurphendale.com" />
+    <link rel="shortcut icon" type="image/svg+xml" href="/res/icon.svg">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.2/css/bulma.css" />
     <link href='https://fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Gruppo' rel='stylesheet'>
     <link rel="stylesheet" href="res/style.css?ver=2021051401" />
 </head>
-<body>
-<div class="container">
+<body rel="foaf:primaryTopic" xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<div class="container h-card">
     <div class="layer">
         <section class="hero block">
             <div class="hero-body">
@@ -26,22 +27,22 @@
 <!--                                <a target="_blank" href="#">-->
 <!--                                    <i class="social fab fa-spotify is-size-2"></i>-->
 <!--                                </a>-->
-                                <a target="_blank" href="https://instagram.com/hurphendale">
+                                <a rel="me" target="_blank" href="https://instagram.com/hurphendale">
                                     <i class="social fab fa-instagram is-size-2 is-size-3-mobile"></i>
                                 </a>
-                                <a target="_blank" href="https://www.youtube.com/channel/UCcMrCmTWJGn_QY3lNKidhwg">
+                                <a rel="me" target="_blank" href="https://www.youtube.com/channel/UCcMrCmTWJGn_QY3lNKidhwg">
                                     <i class="social fab fa-youtube is-size-2 is-size-3-mobile"></i>
                                 </a>
-                                <a target="_blank" href="https://www.facebook.com/hurphendale">
+                                <a rel="me" target="_blank" href="https://www.facebook.com/hurphendale">
                                     <i class="social fab fa-facebook is-size-2 is-size-3-mobile"></i>
                                 </a>
-                                <a target="_blank" href="https://www.soundcloud.com/hurphendale">
+                                <a rel="me" target="_blank" href="https://www.soundcloud.com/hurphendale">
                                     <i class="social fab fa-soundcloud is-size-2 is-size-3-mobile"></i>
                                 </a>
                             </div>
                         </div>
                         <div class="column has-text-centered">
-                            <h1 class="title is-size-1 is-size-2-mobile">Hurphendale</h1>
+                            <h1 class="title is-size-1 is-size-2-mobile p-name p-nickname" about="#me" property="foaf:nick" content="hurphendale">Hurphendale</h1>
                         </div>
                     </div>
             </div>
@@ -110,10 +111,30 @@
             </div>
         </section>
         <footer class="footer is-clear">
-            <div class="box has-text-centered is-transparent">
+            <div class="box is-size-4 has-text-centered is-transparent p-note">
                 <p>Hurphendale is the solo electronic project of American musician Nick Jennings.</p>
                 <p>Blending and mixing melodic ideas, spun into the gravity wells of glitchy electronic beats.</p>
-                <p>Contact <a href="mailto:info@hurphendale.com">info@hurphendale.com</a></p>
+                <p>Contact <a about="#me" rel="me" class="u-email" rel="foaf:mbox" href="mailto:info@hurphendale.com">info@hurphendale.com</a></p>
+
+                <div class="footnotes is-size-7">
+                  <p>
+                    <span class="copyright"><i>© Hurphendale 2021</i></span>
+                    <span class="linkeddata">
+                      <i>View this page as <a target="_blank" href="http://graphite.ecs.soton.ac.uk/browser/?uri=https%3A%2F%2Fhurphendale.com">linked data</a></i>
+                    </span>
+                    <span class="indieweb">
+                      <i> or as an <a target="_blank" href="http://indiewebify.me/validate-h-card/?url=https%3A%2F%2Fhurphendale.com">h-card</a>.</i>
+                    </span>
+                  </p>
+                </div>
+            </div>
+            <div class="hidden">
+              <div>
+                <a about="#me" class="p-url" rel="foaf:homepage" href="https://hurphendale.com"></a>
+              </div>
+              <div>
+                <a about="#me" rel="foaf:depiction" class="u-photo" href="https://hurphendale.com/res/hurphendale.png"></a>
+              </div>
             </div>
         </footer>
     </div>

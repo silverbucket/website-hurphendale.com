@@ -69,7 +69,6 @@ h2 {
 
 p {
     color: #f3f3f3;
-    font-size: 1.2rem;
 }
 
 a {
@@ -80,3 +79,15 @@ a {
 a:hover, .social:hover {
     color: #0df5f5;
 }
+
+.footnotes {
+    margin-top: 3rem;
+}
+.footnotes a {
+    font-weight: 400;
+}
+
+.hidden {
+  display: none;
+}
+    
