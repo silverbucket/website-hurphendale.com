@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.2/css/bulma.css" />
     <link href='https://fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Gruppo' rel='stylesheet'>
-    <link rel="stylesheet" href="res/style.css?ver=2021051401" />
+    <link rel="stylesheet" href="res/style.css?ver=2021053001" />
     <!-- Matomo -->
     <script type="text/javascript">
       var _paq = window._paq = window._paq || [];
@@ -63,19 +63,21 @@
                     </div>
             </div>
         </section>
-        <section class="section news">
+        <section class="section">
             <div class="box is-transparent is-large">
-                <div class="columns is-centered is-widescreen is-multiline">
-                    <div class="column is-full-mobile is-full-desktop is-half-fullhd">
-                        <h3 class="heading is-size-3 is-size-4-mobile">Synthstrom Audible compilation 'Resonance' out now!</h3>
+                <div class="news columns is-centered is-widescreen is-multiline is-vcentered has-text-centered">
+                    <div class="item column level is-full-mobile is-full-desktop is-half-fullhd">
+                        <h3 class="heading is-size-3 is-size-4-mobile">Synthstrom Audible Compilation <br /> SA02 'Resonance' out now!</h3>
                         <p><a target="_blank" href="https://synthstrom.com/label"><img src="news/resonance_cover.png" alt="SA02 Compilation 'Resonance' Released!" /></a></p>
                         <p class="date is-size-6">30.05.2021</p>
                     </div>
-                
-                    <div class="column is-full-mobile is-full-desktop is-half-fullhd">
+                    <div class="column is-full-desktop is-centered">
+                        <div><p class="is-size-7"><button onclick="toggle('news')" class="button is-small">show more</button></p></div>
+                    </div>
+                    <div class="item fold column level is-full-mobile is-full-desktop is-half-fullhd">
                         <h3 class="heading is-size-3 is-size-4-mobile">Track 'Cradled' featured on compilation</h3>
                         <p><a target="_blank" href="https://synthstrom.com/whats-on-satv-in-may/"><img src="news/resonance_listening_party.jpg" alt="SA02 - 'Resonance' Listening Party" /></a></p>
-                        <p class="date is-size-6">27.05.2021</p>
+                        <p class="date is-size-6 level-left">27.05.2021</p>
                     </div>
                 </div>
             </div>
@@ -171,5 +173,24 @@
         </footer>
     </div>
 </div>
+<script type="text/javascript">
+  function toggle(section) {
+    const elems = document.querySelectorAll(`.${section} > .fold`);
+    const button = document.querySelector(`.${section} .button`);
+    elems.forEach((elem) => {
+      if (elem.style.opacity === '1') {
+        elem.style.opacity = '0';
+        elem.style.maxHeight = '0';
+        elem.style.padding = '0';
+        button.innerText = 'show more';
+      } else {
+        elem.style.opacity = '1';
+        elem.style.maxHeight = '100rem';
+        elem.style.padding = '.75rem';
+        button.innerText = 'collapse';
+      }
+    });
+  }
+</script>
 </body>
 </html>
