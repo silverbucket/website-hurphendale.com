@@ -42,6 +42,10 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@fontsource/gruppo": "^5.0.17"
+		"@fortawesome/free-brands-svg-icons": "^6.5.0",
+		"@fortawesome/free-solid-svg-icons": "^6.5.0",
+		"install": "^0.13.0",
+		"npm": "^10.2.4",
+		"svelte-fa": "^3.0.4"
 	}
 }

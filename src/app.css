@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: 'Gruppo';
+        src: local('Gruppo'),
+        url('/fonts/gruppo-latin-400-normal.woff2') format('woff2');
+    }
+}
