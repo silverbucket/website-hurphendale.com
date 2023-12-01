@@ -1,6 +1,6 @@
 <script>
   import "../app.css";
-  import Fa from 'svelte-fa'
+  import Fa from 'svelte-fa/src/fa.svelte';
   import { faFacebook, faSpotify, faBandcamp, faYoutube, faSoundcloud } from "@fortawesome/free-brands-svg-icons";
   import ContentArea from "$lib/ContentArea.svelte";
 </script>
@@ -10,19 +10,29 @@
   <div class="grid grid-cols-1 lg:grid-cols-2">
     <div class="rounded-2xl bg-gradient-to-r from-[#ffffff40] to-[#44444440] pt-4 pb-4 pl-6 pr-6 grid grid-cols-5 max-w-md">
       <a target="_blank" href="https://open.spotify.com/artist/2gI8ydRR48dn8MwQ9hzQ2U?si=l8QIZSG7TlGOqjfkB5dZaA">
-        <Fa size="2x" color="black" icon={faSpotify} />
+        <div class="text-4xl">
+          <Fa icon={faSpotify} />
+        </div>
       </a>
       <a target="_blank" href="https://hurphendale.bandcamp.com">
-        <Fa size="2x" icon={faBandcamp} />
+        <div class="text-4xl">
+          <Fa icon={faBandcamp} />
+        </div>
       </a>
       <a rel="me" target="_blank" href="https://www.youtube.com/channel/UCcMrCmTWJGn_QY3lNKidhwg">
-        <Fa size="2x" icon={faYoutube} />
+        <div class="text-4xl">
+          <Fa icon={faYoutube} />
+        </div>
       </a>
       <a rel="me" target="_blank" href="https://www.facebook.com/hurphendale">
-        <Fa size="2x" icon={faFacebook} />
+        <div class="text-4xl">
+          <Fa icon={faFacebook} />
+        </div>
       </a>
       <a rel="me" target="_blank" href="https://www.soundcloud.com/hurphendale">
-        <Fa size="2x" icon={faSoundcloud} />
+        <div class="text-4xl">
+          <Fa icon={faSoundcloud} />
+        </div>
       </a>
     </div>
     <div class="pt-2 text-center">
