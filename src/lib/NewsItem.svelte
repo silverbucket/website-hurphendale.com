@@ -1,0 +1,43 @@
+<script lang="ts">
+  import EmbedYoutube from "$lib/EmbedYoutube.svelte";
+  import EmbedSpotify from "$lib/EmbedSpotify.svelte";
+  import EmbedBandcamp from "$lib/EmbedBandcamp.svelte";
+
+  export let title: string;
+  export let subtitle: string;
+  export let date: string;
+  export let youtubeId: string = "";
+  export let spotifyId: string = "";
+  export let bandcampId: string = "";
+  export let image: string = "";
+  export let link: string = "";
+
+</script>
+<div>
+  <h2 class="font-gruppo text-sm sm:text-2xl md:text-3xl xl:text-4xl uppercase md:mb-4">
+    {title}
+    <span class="text-sm md:text-xl">{#if subtitle}<br/>{/if}{subtitle}</span>
+  </h2>
+  <p class="text-xs md:text-lg">
+    {date}
+  </p>
+  <div>
+    {#if link}
+      <div class="text-center">
+        <a target="_blank" href={link}>
+      {#if image}
+          <img class="ml-auto mr-auto" src="{image}" />
+      {/if}
+        </a>
+      </div>
+    {/if}
+    {#if youtubeId}
+      <EmbedYoutube youtubeId={youtubeId} />
+    {:else if spotifyId}
+      <EmbedSpotify spotifyId={spotifyId} />
+    {:else if bandcampId}
+      <EmbedBandcamp bandcampId={bandcampId} />
+    {/if}
+
+  </div>
+</div>

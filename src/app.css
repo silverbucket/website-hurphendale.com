@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: 'Gruppo';
+        src: local('Gruppo'),
+        url('/fonts/gruppo-latin-400-normal.woff2') format('woff2');
+    }
+    body {
+        background-color: #4C1206; /* #5D0F07 */
+        @apply font-gruppo;
+    }
+    .site-background {
+        background-image: url('/background.png');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center top;
+        height: 100%;
+        background-color: #0c0202;
+        max-width: 2000px !important;
+    }
+    a.link {
+        @apply text-cyan-500;
+        @apply font-bold;
+        @apply no-underline;
+        @apply hover:underline;
+    }
+}
