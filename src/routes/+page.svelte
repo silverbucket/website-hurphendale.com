@@ -1,6 +1,7 @@
 <script>
   import ContentArea from "$lib/ContentArea.svelte";
   import ListVideos from "$lib/ListVideos.svelte";
+  import News from "$lib/News.svelte";
 
   const videos = {
     'official': [
@@ -25,19 +26,19 @@
   };
 </script>
 
-<ContentArea>
-  Hello World
+<ContentArea title="News" moreLink="/news" moreText="More">
+  <News limit=1 />
 </ContentArea>
 
 <ContentArea title="Official Music Videos">
-  <ListVideos idList={videos.official.slice(0, 4)} />
+  <ListVideos idList={videos.official.slice(0, 4)} responsiveShowOnly=true />
 </ContentArea>
 
 <ContentArea title="Modular Jams">
-  <ListVideos idList={videos.modular.slice(0, 4)} />
+  <ListVideos idList={videos.modular.slice(0, 4)} responsiveShowOnly=true />
 </ContentArea>
 
 <ContentArea title="Deluge Jams">
-  <ListVideos idList={videos.deluge.slice(0, 4)} />
+  <ListVideos idList={videos.deluge.slice(0, 4)} responsiveShowOnly=true />
 </ContentArea>
 

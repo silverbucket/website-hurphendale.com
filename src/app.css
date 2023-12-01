@@ -9,7 +9,8 @@
         url('/fonts/gruppo-latin-400-normal.woff2') format('woff2');
     }
     body {
-        background-color: black;
+        background-color: #4C1206; /* #5D0F07 */
+        @apply font-gruppo;
     }
     .site-background {
         background-image: url('/background.png');
