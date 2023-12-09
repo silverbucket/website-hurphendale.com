@@ -14,7 +14,7 @@
 </script>
 <div class="grid sm:grid-cols-2 xl:grid-cols-4">
   {#each responsiveShowOnly ? shuffleArray(idList) : idList as youtubeId, i}
-  <div class="mb-4 mt-4 mr-4 {i === 0 ? '' : i <= 1 ? 'hidden sm:block' : 'hidden xl:block'}">
+  <div class="mb-4 mt-4 mr-4 {responsiveShowOnly ? i === 0 ? '' : i <= 1 ? 'hidden sm:block' : 'hidden xl:block' : ''}">
     <EmbedYoutube youtubeId={youtubeId} />
   </div>
   {/each}

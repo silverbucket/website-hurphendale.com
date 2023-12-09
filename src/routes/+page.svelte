@@ -2,43 +2,20 @@
   import ContentArea from "$lib/ContentArea.svelte";
   import ListVideos from "$lib/ListVideos.svelte";
   import News from "$lib/News.svelte";
-
-  const videos = {
-    'official': [
-      'HY8hrtxplac',
-      'lJpqPOwh5vM',
-      'F34CAOld72g',
-      '8xSKNknrBR0',
-      '7iy5QsisZ5w'
-    ],
-    'modular': [
-      'yLz3L4YLfS4"',
-      'uJTZ_s0Oe9s',
-      'g3rGywGJyUI',
-      'wVJZs-oe3M8'
-    ],
-    'deluge': [
-      '5kkBi6I2oT8',
-      'omvufDq7fkY',
-      'CDBVkKm1_Vk',
-      'lhA_SgGU8OM'
-    ]
-  };
+  import videoData from "$lib/videos.ts";
 </script>
 
-<ContentArea title="News" moreLink="/news" moreText="More">
-  <News limit=1 />
+<News limit=1 linkPath="/news" linkText="More" />
+
+<ContentArea title="Official Music Videos" linkPath="/videos" linkText="More">
+  <ListVideos idList={videoData.official.slice(0, 4)} responsiveShowOnly={true} />
 </ContentArea>
 
-<ContentArea title="Official Music Videos">
-  <ListVideos idList={videos.official.slice(0, 4)} responsiveShowOnly=true />
+<ContentArea title="Modular Jams" linkPath="/videos" linkText="More">
+  <ListVideos idList={videoData.modular.slice(0, 4)} responsiveShowOnly={true} />
 </ContentArea>
 
-<ContentArea title="Modular Jams">
-  <ListVideos idList={videos.modular.slice(0, 4)} responsiveShowOnly=true />
-</ContentArea>
-
-<ContentArea title="Deluge Jams">
-  <ListVideos idList={videos.deluge.slice(0, 4)} responsiveShowOnly=true />
+<ContentArea title="Deluge Jams" linkPath="/videos" linkText="More">
+  <ListVideos idList={videoData.deluge.slice(0, 4)} responsiveShowOnly={true} />
 </ContentArea>
 

@@ -9,27 +9,27 @@
     <div class="rounded-2xl bg-gradient-to-r from-[#ffffff40] to-[#44444440] pt-4 pb-4 pl-6 pr-6 grid grid-cols-5 max-w-lg gap-8">
       <div>
         <a target="_blank" href="https://open.spotify.com/artist/2gI8ydRR48dn8MwQ9hzQ2U?si=l8QIZSG7TlGOqjfkB5dZaA">
-          <img src="/icons/spotify_icon.svg" />
+          <img alt="spotify" src="/icons/spotify_icon.svg" />
         </a>
       </div>
       <div>
         <a target="_blank" href="https://hurphendale.bandcamp.com">
-          <img src="/icons/bandcamp_icon.svg" />
+          <img alt="bandcamp" src="/icons/bandcamp_icon.svg" />
         </a>
       </div>
       <div>
         <a rel="me" target="_blank" href="https://www.youtube.com/channel/UCcMrCmTWJGn_QY3lNKidhwg">
-          <img src="/icons/youtube_icon.svg" />
+          <img alt="youtube" src="/icons/youtube_icon.svg" />
         </a>
       </div>
       <div>
         <a rel="me" target="_blank" href="https://www.facebook.com/hurphendale">
-          <img src="/icons/fb_icon.svg" />
+          <img alt="facebook" src="/icons/fb_icon.svg" />
         </a>
       </div>
       <div>
         <a rel="me" target="_blank" href="https://www.soundcloud.com/hurphendale">
-          <img src="/icons/soundcloud_icon.svg" />
+          <img alt="soundcloud" src="/icons/soundcloud_icon.svg" />
         </a>
       </div>
     </div>

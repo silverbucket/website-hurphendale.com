@@ -3,6 +3,4 @@
   import News from "$lib/News.svelte";
 </script>
 
-<ContentArea title="News" backLink="/" backText="Home">
-  <News />
-</ContentArea>
+<News linkPath="/" linkText="Home" isBackLink={true} />
