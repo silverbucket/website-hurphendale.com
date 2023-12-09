@@ -10,7 +10,7 @@
 
   $: items = limit > 0 ? newsData.slice(0, limit) : newsData;
 
-  const wrapperClass = "lg:pl-16 lg:pr-16"
+  const wrapperClass = "lg:pl-16 lg:pr-16 xl:pl-32 xl:pr-32"
 </script>
 
 <ContentArea title="News" {linkPath} {linkText} {isBackLink}>

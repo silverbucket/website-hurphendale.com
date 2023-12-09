@@ -28,7 +28,7 @@
         <div class="text-center">
           <a target="_blank" href={link}>
         {#if image}
-            <img class="ml-auto mr-auto" src="{image}" />
+            <img alt={title} class="ml-auto mr-auto" src="{image}" />
         {/if}
           </a>
         </div>
