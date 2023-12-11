@@ -22,7 +22,8 @@
         max-width: 2000px !important;
     }
     a.link {
-        @apply text-cyan-500;
+        @apply text-black;
+        /*@apply text-cyan-500;*/
         @apply font-bold;
         @apply no-underline;
         @apply hover:underline;

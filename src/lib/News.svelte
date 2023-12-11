@@ -14,7 +14,7 @@
 </script>
 
 <ContentArea title="News" {linkPath} {linkText} {isBackLink}>
-  <div class="mt-8 lg:mt-16"></div>
+  <div class="mt-4 lg:mt-8"></div>
   {#each items as item, i}
   <div class={i < items.length - 1 ? `mb-8 ${wrapperClass}` : wrapperClass}>
     <NewsItem title={item.title} subtitle={item.subtitle} date={item.date}
@@ -23,6 +23,7 @@
               bandcampId={item.bandcampId}
               image={item.image}
               link={item.link}
+              linkText={item.linkText}
     />
   </div>
   {/each}

@@ -12,6 +12,7 @@
   export let bandcampId: string = "";
   export let image: string = "";
   export let link: string = "";
+  export let linkText: string = "";
 </script>
 
 <ContentArea>
@@ -24,11 +25,11 @@
       {date}
     </p>
     <div>
-      {#if link}
+      {#if link && !bandcampId}
         <div class="text-center">
           <a target="_blank" href={link}>
         {#if image}
-            <img alt={title} class="ml-auto mr-auto" src="{image}" />
+            <img alt={title} class="ml-auto mr-auto" src="{image}" />{linkText}
         {/if}
           </a>
         </div>
@@ -37,10 +38,7 @@
         <EmbedYoutube youtubeId={youtubeId} />
       {:else if spotifyId}
         <EmbedSpotify spotifyId={spotifyId} />
-      {:else if bandcampId}
-        <EmbedBandcamp bandcampId={bandcampId} />
       {/if}
-
     </div>
   </div>
 </ContentArea>
