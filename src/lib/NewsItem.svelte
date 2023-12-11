@@ -1,7 +1,6 @@
 <script lang="ts">
   import EmbedYoutube from "$lib/EmbedYoutube.svelte";
   import EmbedSpotify from "$lib/EmbedSpotify.svelte";
-  import EmbedBandcamp from "$lib/EmbedBandcamp.svelte";
   import ContentArea from "$lib/ContentArea.svelte";
 
   export let title: string;
@@ -17,13 +16,11 @@
 
 <ContentArea>
   <div>
-    <h2 class="font-gruppo text-sm sm:text-2xl md:text-3xl xl:text-4xl uppercase md:mb-4">
+    <h2 class="font-gruppo text-sm sm:text-1xl md:text-2xl xl:text-3xl uppercase md:mb-4">
       {title}
       <span class="text-sm md:text-xl">{#if subtitle}<br/>{/if}{subtitle}</span>
     </h2>
-    <p class="text-xs md:text-lg">
-      {date}
-    </p>
+
     <div>
       {#if link && !bandcampId}
         <div class="text-center">
@@ -40,5 +37,8 @@
         <EmbedSpotify spotifyId={spotifyId} />
       {/if}
     </div>
+        <p class="text-xs md:text-lg">
+          {date}
+        </p>
   </div>
 </ContentArea>

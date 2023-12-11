@@ -4,9 +4,9 @@
 </script>
 
 <div class="bg-gradient-to-r from-[#d7000090] to-[#d7330090]">
-  <div class="bg-black bg-opacity-40 pt-8 pl-8 pr-8 sm:pt-16 sm:pl-16 sm:pr-16">
+  <div class="bg-black bg-opacity-40 pt-2 pl-8 pr-8 sm:pt-4 sm:pl-16 sm:pr-16">
   <div class="grid grid-cols-1 lg:grid-cols-2">
-    <div class="rounded-2xl bg-gradient-to-r from-[#ffffff40] to-[#44444440] pt-4 pb-4 pl-6 pr-6 grid grid-cols-5 max-w-lg gap-8">
+    <div class="rounded-2xl bg-gradient-to-r from-[#ffffff40] to-[#44444440] pt-2 pb-2 pl-6 pr-6 grid grid-cols-5 max-w-lg gap-8">
       <div>
         <a target="_blank" href="https://open.spotify.com/artist/2gI8ydRR48dn8MwQ9hzQ2U?si=l8QIZSG7TlGOqjfkB5dZaA">
           <img alt="spotify" src="/icons/spotify_icon.svg" />
@@ -33,12 +33,12 @@
         </a>
       </div>
     </div>
-    <div class="pt-2 text-center">
+    <div class="pt-2 sm:pt-4 lg:pt-2 text-center">
       <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-100 p-nickname"
           about="#me" property="foaf:nick" content="hurphendale">Hurphendale</h1>
     </div>
   </div>
-  <div class="pt-8 sm:pt-16">
+  <div class="pt-4 sm:pt-8 lg:pt-8">
     <slot />
   </div>
   <footer>
