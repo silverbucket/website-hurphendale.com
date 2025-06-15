@@ -16,5 +16,10 @@
 	</head>
 	<body rel="foaf:primaryTopic" xmlns:foaf="http://xmlns.com/foaf/0.1/" data-sveltekit-preload-data="hover">
 		<div>%sveltekit.body%</div>
+            <script type="text/javascript">
+                window.addEventListener('beforeunload', function (e) {
+                    navigator.sendBeacon('/logout', { action: 'tab_closed' });
+                });
+            </script>
 	</body>
 </html>
