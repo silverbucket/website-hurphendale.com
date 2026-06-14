@@ -4,7 +4,7 @@
 </script>
 
 <div class="bg-gradient-to-r from-[#d7000090] to-[#d7330090]">
-  <div class="bg-black bg-opacity-40 pt-2 pl-8 pr-8 sm:pt-4 sm:pl-16 sm:pr-16">
+  <div class="bg-black/40 pt-2 pl-8 pr-8 sm:pt-4 sm:pl-16 sm:pr-16">
   <div class="grid grid-cols-1 lg:grid-cols-2">
     <div class="rounded-2xl bg-gradient-to-r from-[#ffffff40] to-[#44444440] pt-2 pb-2 pl-6 pr-6 grid grid-cols-5 max-w-lg gap-8">
       <div>
