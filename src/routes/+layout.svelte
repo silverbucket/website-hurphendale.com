@@ -35,7 +35,7 @@
     </div>
     <div class="pt-2 sm:pt-4 lg:pt-2 text-center">
       <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-100 p-nickname"
-          about="#me" property="foaf:nick" content="hurphendale">Hurphendale</h1>
+          about="#me" property="foaf:nick" {...{ content: 'hurphendale' }}>Hurphendale</h1>
     </div>
   </div>
   <div class="pt-4 sm:pt-8 lg:pt-8">

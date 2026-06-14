@@ -1,4 +1,16 @@
-export default [
+export interface NewsEntry {
+	title: string;
+	subtitle: string;
+	date: string;
+	youtubeId?: string;
+	spotifyId?: string;
+	bandcampId?: string;
+	image?: string;
+	link?: string;
+	linkText?: string;
+}
+
+const news: NewsEntry[] = [
 	{
 		title: 'Nosdromy',
 		subtitle: 'Official Music Video',
@@ -91,3 +103,5 @@ export default [
 		link: 'https://synthstrom.com/whats-on-satv-in-may/',
 	},
 ];
+
+export default news;
